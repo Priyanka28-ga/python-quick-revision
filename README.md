@@ -18,5 +18,11 @@ Contains basic of python sunch as :
   - functions of string
   - formatting
  
-    # 03_datastructures
-    This will tell you about all the sequential data structures present in our python
+  # 03_datastructures
+  This will tell you about all the sequential data structures present in our python
+
+  # 04_modules_numpy
+  There are various libarries in python. This repo consist all about python mathematical library numpy
+  - CRUD operations
+  - functions
+  - matrix
