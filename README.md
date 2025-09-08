@@ -17,3 +17,6 @@ Contains basic of python sunch as :
   - conacting
   - functions of string
   - formatting
+ 
+    # 03_datastructures
+    This will tell you about all the sequential data structures present in our python
