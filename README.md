@@ -1,5 +1,6 @@
 # python-quick-revision
-This repository contains python code and concepts for quick revision
+This repository contains python code and concepts for quick revision.
+Keep in mind this is just to give a quick glance to topics. It is just to have a look at before your test or interview
 
 # 01_basics
 Contains basic of python sunch as :
@@ -9,3 +10,10 @@ Contains basic of python sunch as :
 - control loops
 - conditional loops
 
+  # 02_strings
+  Text written after -> is your output of that paticural  code
+  Contains all about strings:
+  - decalring
+  - conacting
+  - functions of string
+  - formatting
