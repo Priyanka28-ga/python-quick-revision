@@ -20,4 +20,146 @@ Example : list 1= [1,2,3]
 - but in multi processing each code has its own interpretor can run in parallel
 - a process is an independent program in execution with its own memory space, while a thread is a segment of a process that shares the process's memory and resources.
 
-# Q5. 
+# Q5. List comprehension ? 
+- concise way to create list
+-squares = [x**2 for x in range(5)]
+
+# Q6. Shallow copy vs deep copy ? 
+Shallow copy → Copies outer object only, inner objects are shared.
+Deep copy → Copies everything, fully independent.
+import copy
+
+list1 = [[1, 2], [3, 4]]
+
+shallow = copy.copy(list1)   # Shallow copy
+deep = copy.deepcopy(list1)  # Deep copy
+
+list1[0][0] = 99
+
+print(shallow)  # [[99, 2], [3, 4]]  <-- changed too
+print(deep)     # [[1, 2], [3, 4]]   <-- independent
+
+# Q7. Dictionary works internally? 
+- As hash tables keys are hashed and values are stored at hash index 
+
+# Q8. Function vs Method ? 
+- function defined independently and can be called directly 
+- methods are define within a class and works with objects only 
+
+# Q9. *args vs *kwargs 
+- *args means postional argument as tuple , used when you dont know how many values will be passed
+- *kwargs means keyword argument as dictionary, used when you dint know how many key - value pairs will be passed
+- def demo(*args, **kwargs):
+    print("args:", args)
+    print("kwargs:", kwargs)
+
+demo(10, 20, 30, name="Priya", age=25)
+
+Output:
+
+args: (10, 20, 30)
+kwargs: {'name': 'Priya', 'age': 25}
+
+
+# Q10. python decorators ? 
+- function that take another function and extend jts behaviour
+- def decorator(func):
+    def wrapper():
+        print("Before")
+        func()
+    return wrapper
+
+# Q11. python generator ? 
+- function uses yieled values one at a time.. efficient than lists
+def my_gen():
+    yield 1
+    yield 2
+    yield 3
+
+gen = my_gen()
+
+for val in gen:
+    print(val)
+
+Output:
+
+1
+2
+3
+
+# Q12. Difference between staticmethod, classmethod, and instance method?
+- Instance method: Needs self, works on object.
+
+- Class method: Uses @classmethod, takes cls, works on class.
+
+- Static method: Uses @staticmethod, no self/cls, utility function.
+
+# Q13. Difference between module and package?
+
+- Module: Single .py file.
+- Package: Folder with __init__.py, can contain multiple modules.
+
+# Q14. Virtual environment ? 
+- Isolated python environment to manage dependencies 
+
+# Q15. error vs exception? 
+- error serious problem like syntaxerror
+- exception like valueerror can recover using try-except
+
+# Q16. What is async/await in Python?
+- Syntax for asynchronous programming.
+- Helps run tasks concurrently (like I/O).
+
+# Q17. withOpen () vs open() 
+- withopen automatically closes the file 
+- open manulaly closes file 
+
+# Q18. Difference between del, remove(), and pop()?
+- del: Delete by index or variable.
+- remove(): Remove by value.
+- pop(): Remove and return by index
+
+# Q19. Difference between iloc and loc?
+- iloc → index-based (by position, like array).
+- loc → label-based (by row/column names).
+
+# Q20. How do you use groupby() for complex aggregations?
+df.groupby('Category')['Sales'].agg(['mean', 'sum', 'count'])
+Can combine multiple aggregations on multiple columns.
+
+# Q21. How do you merge/join multiple datasets in Pandas?
+- pd.merge(df1, df2, on='key') → SQL-style join.
+- pd.concat([df1, df2]) → stack vertically/horizontally.
+- df.join(df2) → join on index.
+
+# Q22. perxent change calculted as ? 
+- use pct_changed for percentage difference 
+
+# Q23. Difference between apply(), map(), and applymap()?
+map() → element-wise on Series.
+apply() → function on Series or DataFrame (row/column wise).
+applymap() → element-wise on entire DataFrame.
+
+# Q24. How do you debug a slow Python script?
+Use cProfile or time module to find bottlenecks.
+Optimize with vectorization (NumPy/Pandas).
+Avoid loops, use built-in functions.
+Check memory usage.
+
+# Q25. How do you handle date/time data for time series analysis?
+Convert to datetime: pd.to_datetime(df['date']).
+Set as index: df.set_index('date').
+Resample: df.resample('M').sum().
+Extract parts: df['date'].dt.year
+
+# 26. How do you write a query-like filter in Pandas (SQL WHERE equivalent)?
+df.query("Age > 30 and City == 'Delhi'")
+Or:
+df[df['Age'] > 30]
+
+
+
+
+
+
+
