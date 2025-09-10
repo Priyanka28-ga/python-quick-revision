@@ -27,5 +27,9 @@ Contains basic of python sunch as :
   - functions
   - matrix
 
-  #06_modules_datetime
+  # 06_modules_datetime
   It tells all about how can we access date and months using datetime module
+
+  # 07_modules_math
+  It tells about all the functions included in math module that can bes used for mathematical calculation
+   
