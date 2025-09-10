@@ -12,6 +12,14 @@
 - definig dictionary
     D={23:"twothree",'B':43,'C':'CCD'}
 
+- List: Ordered, mutable, allows duplicates.
+
+- Tuple: Ordered, immutable, allows duplicates.
+
+- Set: Unordered, mutable, no duplicates.
+
+- Dict: Key-value pairs, keys unique.
+
 # ACCESSING THE VALUES
 print(L[1]) -> 3
 print(T[1]) -> 3 
