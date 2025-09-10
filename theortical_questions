@@ -1,0 +1,23 @@
+# Q1. What are Python’s key features?
+- Interpreted, dynamically typed, object-oriented.
+- Easy to learn, large standard library.
+- Cross-platform, supports multiple paradigms (OOP, functional, procedural).
+
+# Q2. What are immutable and mutuable in python ?
+- immutable can not be changed like int str float tuple
+- mutuable can be changed like dict set list 
+
+# Q3. What is difference between == and is ? 
+- == compares values
+- is check memory address
+Example : list 1= [1,2,3]
+          list 3 = list 1 // here list 3 in list 1 eill give true as they are pointing to same memory location 
+          list 2 = [1,2,3] // here list 2 in list will not give true even if they hold same elements because memory location will be different 
+
+# Q4. GIL? 
+- global interpreter lock 
+- only one thread can run Python code at a time makes multithreading slower 
+- but in multi processing each code has its own interpretor can run in parallel
+- a process is an independent program in execution with its own memory space, while a thread is a segment of a process that shares the process's memory and resources.
+
+# Q5. 
