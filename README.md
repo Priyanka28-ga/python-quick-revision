@@ -32,4 +32,8 @@ Contains basic of python sunch as :
 
   # 07_modules_math
   It tells about all the functions included in math module that can bes used for mathematical calculation
-   
+
+  # 08_modules_cmath_statistics
+  - It comtains about cmath and statistics module functions.
+ 
+  
