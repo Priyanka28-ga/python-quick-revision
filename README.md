@@ -26,3 +26,6 @@ Contains basic of python sunch as :
   - CRUD operations
   - functions
   - matrix
+
+  #06_modules_datetime
+  It tells all about how can we access date and months using datetime module
